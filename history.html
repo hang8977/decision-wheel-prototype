@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>历史记录 - 决策转盘</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white h-screen flex flex-col">
+    <!-- 顶部导航 -->
+    <div class="px-4 py-6 flex justify-between items-center border-b border-gray-200">
+        <h1 class="text-xl font-bold">历史记录</h1>
+        <button class="text-gray-400">
+            <i class="fas fa-trash-alt"></i>
+        </button>
+    </div>
+
+    <!-- 历史列表 -->
+    <div class="flex-1 overflow-auto">
+        <div class="divide-y divide-gray-100">
+            <!-- 今天 -->
+            <div class="p-4">
+                <h2 class="text-sm text-gray-500 mb-3">今天</h2>
+                <div class="space-y-4">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-medium">午餐决策</h3>
+                                <p class="text-blue-500 text-lg font-medium mt-1">火锅</p>
+                            </div>
+                            <span class="text-sm text-gray-400">12:30</span>
+                        </div>
+                        <div class="mt-2 text-sm text-gray-500">
+                            共5个选项：火锅、寿司、沙拉、面条、便当
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 昨天 -->
+            <div class="p-4">
+                <h2 class="text-sm text-gray-500 mb-3">昨天</h2>
+                <div class="space-y-4">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-medium">晚餐决策</h3>
+                                <p class="text-blue-500 text-lg font-medium mt-1">寿司</p>
+                            </div>
+                            <span class="text-sm text-gray-400">19:45</span>
+                        </div>
+                        <div class="mt-2 text-sm text-gray-500">
+                            共4个选项：寿司、披萨、炒饭、汉堡
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部导航栏 -->
+    <div class="flex justify-around items-center py-4 bg-white border-t border-gray-200">
+        <a href="#" class="flex flex-col items-center text-gray-400">
+            <i class="fas fa-home text-xl"></i>
+            <span class="text-xs mt-1">首页</span>
+        </a>
+        <a href="#" class="flex flex-col items-center text-blue-500">
+            <i class="fas fa-history text-xl"></i>
+            <span class="text-xs mt-1">历史</span>
+        </a>
+        <a href="#" class="flex flex-col items-center text-gray-400">
+            <i class="fas fa-cog text-xl"></i>
+            <span class="text-xs mt-1">设置</span>
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结果 - 决策转盘</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white h-screen flex flex-col">
+    <!-- 结果展示 -->
+    <div class="flex-1 flex flex-col items-center justify-center p-8 space-y-8">
+        <div class="text-center">
+            <h2 class="text-xl text-gray-600 mb-4">今天中午吃什么？</h2>
+            <div class="text-4xl font-bold text-blue-500 mb-2">火锅</div>
+            <p class="text-gray-400">第3次被选中</p>
+        </div>
+
+        <!-- 操作按钮 -->
+        <div class="w-full space-y-4">
+            <button class="w-full bg-blue-500 text-white py-3 rounded-lg font-medium">
+                <i class="fas fa-redo mr-2"></i>再转一次
+            </button>
+            <button class="w-full bg-gray-100 text-gray-600 py-3 rounded-lg font-medium">
+                <i class="fas fa-share-alt mr-2"></i>分享结果
+            </button>
+        </div>
+    </div>
+
+    <!-- 底部提示 -->
+    <div class="p-4 text-center text-gray-400 text-sm">
+        <p>本次决策已保存至历史记录</p>
+    </div>
+</body>
+</html>
